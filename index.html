@@ -445,5 +445,58 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop">
+      <div class="modal">
+        <form name="form" autocomplete="off">
+          <fieldset>
+            <legend>Leave your contacts and we will call you back</legend>
+            <input
+              type="text"
+              name="user-name"
+              id="user_name"
+              minlength="2"
+              placeholder="Alexander"
+              required
+              autofocus
+            />
+            <label for="user_name">Name</label>
+            <input
+              type="tel"
+              name="user-tel"
+              id="user_tel"
+              placeholder="+380 787948796"
+              required
+            />
+            <label for="user_tel">Phone</label>
+            <input
+              type="email"
+              name="user-email"
+              id="user_email"
+              placeholder="Alexander97@gmail.com"
+              required
+            />
+            <label for="user_email">Email</label>
+            <textarea
+              name="user-comments"
+              id="user_comments"
+              placeholder="Text input"
+            ></textarea>
+            <label for="user_comments">Comment</label>
+            <input
+              type="checkbox"
+              name="privacy-policy-checkbox"
+              id="privacy_policy_checkbox"
+            />
+            <label for="privacy-policy-checkbox"
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+          </fieldset>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

@@ -42,6 +42,17 @@ ul {
 button {
   cursor: pointer;
 }
+
+input {
+  font-family: inherit;
+  color: currentColor;
+}
+
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
 /* HEADER */
 .header-address {
   margin-left: auto;
@@ -506,3 +517,17 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* modal */
+
+/* .backdrop {
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+/* .modal {
+} */
