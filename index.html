@@ -448,53 +448,81 @@
 
     <!-- Modal window -->
     <div class="backdrop">
-      <div class="modal">
+      <div class="modal is-open">
+        <button type="button" class="close-icon-btn">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
         <form name="form" autocomplete="off">
+          <p class="form-title">
+            Leave your contacts and we will call you back
+          </p>
           <fieldset>
-            <legend>Leave your contacts and we will call you back</legend>
-            <input
-              type="text"
-              name="user-name"
-              id="user_name"
-              minlength="2"
-              placeholder="Alexander"
-              required
-              autofocus
-            />
-            <label for="user_name">Name</label>
-            <input
-              type="tel"
-              name="user-tel"
-              id="user_tel"
-              placeholder="+380 787948796"
-              required
-            />
-            <label for="user_tel">Phone</label>
-            <input
-              type="email"
-              name="user-email"
-              id="user_email"
-              placeholder="Alexander97@gmail.com"
-              required
-            />
-            <label for="user_email">Email</label>
+            <label class="form-label" for="user_name">Name</label>
+            <div class="form-input-wrap">
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#person-icon"></use>
+              </svg>
+              <input
+                type="text"
+                class="form-input"
+                name="user-name"
+                id="user_name"
+                minlength="2"
+                required
+                autofocus
+              />
+            </div>
+            <label class="form-label" for="user_tel">Phone</label>
+            <div class="form-input-wrap">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#phone-icon"></use>
+              </svg>
+              <input
+                type="tel"
+                class="form-input"
+                name="user-tel"
+                minlength="8"
+                id="user_tel"
+                required
+              />
+            </div>
+            <label class="form-label" for="user_email">Email</label>
+
+            <div class="form-input-wrap">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#email-icon"></use>
+              </svg>
+              <input
+                type="email"
+                class="form-input"
+                name="user-email"
+                id="user_email"
+                minlength="6"
+                required
+              />
+            </div>
+            <label class="form-label" for="user_comments">Comment</label>
             <textarea
+              class="form-input"
               name="user-comments"
               id="user_comments"
               placeholder="Text input"
             ></textarea>
-            <label for="user_comments">Comment</label>
+
             <input
               type="checkbox"
               name="privacy-policy-checkbox"
               id="privacy_policy_checkbox"
+              value="True"
             />
             <label for="privacy-policy-checkbox"
               >I accept the terms and conditions of the
               <a href="">Privacy Policy</a></label
             >
           </fieldset>
-          <button type="submit">Send</button>
+          <button type="submit" class="form-btn">Send</button>
         </form>
       </div>
     </div>
