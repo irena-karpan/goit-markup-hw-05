@@ -551,8 +551,8 @@ legend {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  max-width: 408px;
-  max-height: 584px;
+  min-width: 408px;
+  min-height: 584px;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -579,6 +579,9 @@ legend {
 
 /* Form */
 
+.modal-form {
+  margin-bottom: 24px;
+}
 .form-title {
   font-weight: 500;
   font-size: 16px;
@@ -589,15 +592,16 @@ legend {
   margin-bottom: 16px;
 }
 
-.form-input-wrap {
+.form-icon-wrap {
   position: relative;
   margin-top: 4px;
   margin-bottom: 8px;
 }
 .input-icon {
   position: absolute;
-  top: 8px;
+  top: 50%;
   left: 16px;
+  transform: translateY(-50%);
 }
 
 .form-input {
@@ -605,9 +609,9 @@ legend {
   border: 1px solid #4d5ae5;
   border-radius: 4px;
   width: 100%;
-
-  padding: 8px 16px 8px 38px;
+  padding: 11px 16px 11px 38px;
 }
+
 .form-label {
   font-weight: 400;
   font-size: 12px;
@@ -616,6 +620,22 @@ legend {
   color: #8e8f99;
 }
 
+.form-textarea {
+  display: block;
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+  width: 100%;
+  padding: 11px 16px;
+  resize: none;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  height: 120px;
+  overflow-y: auto;
+}
+
+.form-checkbox-wrap {
+  margin-bottom: 24px;
+}
 .form-btn {
   display: block;
   margin: 0 auto;
@@ -632,4 +652,13 @@ legend {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   border: none;
+}
+/* .checkbox-icon {
+  fill:;
+} */
+.form-policy-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
