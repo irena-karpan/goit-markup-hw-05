@@ -495,8 +495,15 @@ legend {
 
 .footer-container {
   display: flex;
-  gap: 80px;
   align-items: baseline;
+}
+
+.footer-column-wrap:last-child {
+  margin-left: auto;
+}
+
+.footer-column-wrap:nth-child(2n) {
+  margin-left: 120px;
 }
 .footer-column-wrap {
   display: flex;
@@ -571,9 +578,6 @@ legend {
   background-color: #31d0aa;
 }
 
-.footer-column-wrap:first-child {
-  margin-right: auto;
-}
 /* container обгортка тільки для контенту*/
 .container {
   max-width: calc(1128px + 15px + 15px);
@@ -641,7 +645,7 @@ legend {
 }
 
 .backdrop:not(.is-open) .modal {
-  transform: translate(-50%, -50%), scale(1.5);
+  transform: translate(-50%, -50%) scale(1.5);
 }
 .close-icon-btn {
   position: absolute;
@@ -667,7 +671,7 @@ legend {
   border-color: transparent;
 }
 
-.close-icon-btn:hover,
+.close-icon-btn:hover .close-icon,
 .close-icon-btn:focus .close-icon {
   fill: #fff;
 }
@@ -721,12 +725,12 @@ legend {
 .form-icon-wrap:hover {
   fill: #4d5ae5;
 }
-.form-icon-wrap:hover .form-input {
+.form-icon-wrap:hover .form-input,
+.form-icon-wrap:focus .form-input {
   border-color: #4d5ae5;
 }
 
 .form-icon-wrap:focus-within {
-  border-color: #4d5ae5;
   fill: #4d5ae5;
 }
 
