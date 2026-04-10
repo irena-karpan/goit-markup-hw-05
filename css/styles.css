@@ -539,7 +539,7 @@ legend {
 }
 
 .footer-input:hover,
-.footer-input:focus:focus {
+.footer-input:focus {
   border: 1px solid #31d0aa;
 }
 
@@ -580,7 +580,8 @@ legend {
 
 /* container обгортка тільки для контенту*/
 .container {
-  max-width: calc(1128px + 15px + 15px);
+  /* max-width: calc(1128px + 15px + 15px); */
+  max-width: 1158px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -637,7 +638,7 @@ legend {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
 
-  padding: 72px 24px 16px;
+  padding: 72px 24px 24px;
 
   transition-property: transform;
   transition-duration: 250ms;
@@ -665,6 +666,10 @@ legend {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.close-icon {
+  fill: #2e2f42;
+}
+
 .close-icon-btn:hover,
 .close-icon-btn:focus {
   background-color: #404bbf;
