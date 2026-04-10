@@ -533,14 +533,14 @@ legend {
   letter-spacing: 0.04em;
   color: #fff;
 
-  transition-property: border;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input:hover,
 .footer-input:focus {
-  border: 1px solid #31d0aa;
+  border-color: #31d0aa;
 }
 
 .footer-input::placeholder {
@@ -725,6 +725,7 @@ legend {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
+  cursor: pointer;
 }
 
 .form-icon-wrap:hover {
@@ -735,7 +736,9 @@ legend {
   border-color: #4d5ae5;
 }
 
-.form-icon-wrap:focus-within {
+.form-icon-wrap:focus-within,
+.form-icon-wrap:focus-within .form-input {
+  border-color: #4d5ae5;
   fill: #4d5ae5;
 }
 
@@ -758,6 +761,7 @@ legend {
   margin-bottom: 16px;
   height: 120px;
   overflow-y: auto;
+  cursor: pointer;
 
   font-weight: 400;
   font-size: 12px;
@@ -826,6 +830,7 @@ legend {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   fill: transparent;
+  cursor: pointer;
 
   transition-property: background-color, border-color, fill;
   transition-duration: 250ms;
